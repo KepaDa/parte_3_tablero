@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tamaño;
+        tamaño = parseInt(prompt("Introduce tamaño tablero")); 
+        console.log(typeof(tamaño));
+        let filap = "";
+        let filai = "";
+
+        for(let i = 1; i <= tamaño; i = i + 1){
+            if (i % 2 == 0) {
+            filap += "O"
+            filai += "X"
+            //numero par
+            } else {
+            filap += "X"
+            filai += "O"
+            // numero impar
+            }
+        }
+            for(let i = 1; i <= tamaño; i = i + 1){
+                if (i % 2 == 0) {
+            console.log(filap);
+            }else {
+            console.log(filai);
+            }
+        }
+            
+            
+
+    </script>
+</body>
+</html>
